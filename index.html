@@ -1,0 +1,420 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Online Brownie Shop</title>
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="logo"> NutriBites </a>
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#shop">Shop</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<div class="icons">
+			<div id="menu-btn" class="fas fa-bars"></div>
+			<div id="search-btn" class="fas fa-search"></div>
+			<div id="cart-btn" class="fas fa-shopping-cart"></div>
+			<div id="login-btn" class="fas fa-user"></div>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</header>
+
+
+	<section class="home" id="home">
+		<div class="slides-container">
+			<div class="slide active">
+				<div class="content">
+					<span>Order Jaggery Brownie  </span>
+					<h3>Upto 80% off</h3>
+					<a href="#" class="btnhome">Buy Now</a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="images/chocochip-brownie.jpg" alt="">
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content">
+					<span>Customize Ordering</span>
+					<h3>upto 80% off</h3>
+					<a href="#" class="btn">Buy Now</a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src="images/millet-brownie.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="content">
+					<span>Fast Delivery</span>
+					<h3>upto 80% off</h3>
+					<a href="#" class="btn">Buy Now</a>
+				</div>
+				<div class="img">
+					<img decoding="async" src="images/choco.jpg">
+				</div>
+			</div>
+
+		</div>
+		<div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+		<div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+	</section>
+
+	<section class="banner-container">
+
+		<div class="banner">
+			<img decoding="async"
+				src=
+"images/brownie-with-vanilla-ice-cream.jpg" alt="">
+			<div class="content">
+				<span>Brownie with Icecream</span>
+				<h3>upto 50% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"
+				src=
+"images/millet-brownie.jpg" alt="">
+			<div class="content">
+				<span>Millet Brownie</span>
+				<h3>upto 60% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"
+				src=
+"images/choco.jpg" alt="">
+			<div class="content">
+				<span>Fudgy Chocolate Brownie</span>
+				<h3>upto 50% off</h3>
+				<a href="#" class="btn">Buy now</a>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="heading">
+		<h1>The Bakery</h1>
+	</div>
+
+	<section class="category">
+
+		<h1 class="title"> All <span>categories</span> <a href="#">view all >></a> </h1>
+
+		<div class="box-container">
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src=
+"images/ragi-brownie.jpg" alt="">
+				<h3>Brownie</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src=
+"images/Millet-Bliss-Balls.jpg" alt="">
+				<h3>Healthy Ladoos</h3>
+			</a>
+
+			<a href="#" class="box">
+				<img decoding="async"
+					src=
+"images/veg-sandwich.jpg" alt="">
+				<h3>Sandwiches </h3>
+			</a>
+		</div>
+	</section>
+
+
+	<section class="products" id="shop">
+
+		<h1 class="title"> our <span>products</span> <a href="#">view all >></a> </h1>
+
+		<div class="box-container">
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/nutty-brownies.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Choco-Nutty Brownie</h3>
+					<div class="price"><span>&#8377;90</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/ragi-brownie.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Ragi Brownie</h3>
+					<div class="price"><span>&#8377;100</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/chocochip-brownie.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Chocochip Brownie</h3>
+					<div class="price"><span>&#8377;90</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/low-calorie-bliss-balls.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Low Calorie bliss balls</h3>
+					<div class="price"><span>&#8377;30</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/peanut-balls.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Peanut dryfruit balls</h3>
+					<div class="price"><span>&#8377;50</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/creamy-veg-sandwich.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>vegetable Sandwich</h3>
+					<div class="price"><span>&#8377;110</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/Tandoori-Paneer-Sandwich.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Panner Sandwich</h3>
+					<div class="price"><span>&#8377;110</span></div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icons">
+					<a href="#" class="fas fa-shopping-cart"></a>
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+				</div>
+				<div class="img">
+					<img decoding="async"
+						src=
+"images/cabbage-sandwich.jpg" alt="">
+				</div>
+				<div class="content">
+					<h3>Gobi cabbage sandwich</h3>
+					<div class="price"><span>&#8377;100</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="heading">
+		<h1>About us</h1>
+	</div>
+
+	<section class="about" id="about">
+		<div class="img">
+			<img decoding="async"
+				src=
+"images/doble chocolate.jpg" alt="">
+		</div>
+
+		<div class=" content">
+			<h3>The NutriBites Shop</h3>
+			<p>a brownie, is a chocolate baked confection. Brownies come in a variety of forms and may be either fudgy or cakey, depending on their density. Brownies often, but not always, have a glossy "skin" on their upper crust. They may also include nuts, frosting, chocolate chips, or other ingredients. </p>
+			<a href="#" class="btn">read more</a>
+		</div>
+	</section>
+
+
+	<div class="heading">
+		<h1>Contact us</h1>
+	</div>
+
+	<section class="contact" id="contact">
+		<div class="icons-container">
+
+			<div class="icons">
+				<i class="fas fa-phone"></i>
+				<h3>Contact number</h3>
+				<p>+91 9655340790</p>
+				<p>+91 9952904108</p>
+			</div>
+
+			<div class="icons">
+				<i class="fas fa-envelope"></i>
+				<h3>email</h3>
+				<p><style ="color:black;"></style><a href="mailto:bharathikvasan@gmail.com">bharathikvasan@gmail.com</a></p>
+				<p><a href="mailto:praveen.ven28@gmail.com">praveen.ven28@gmail.com</a></p>
+			</div>
+
+			<div class="icons">
+				<i class="fas fa-map-marker-alt"></i>
+				<h3>address</h3>
+				<p>No 1607 Pearl Block, Alliance orchid springs, Korattur, Chennai-600076.</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<form action="">
+				<h3>get in touch</h3>
+				<div class="inputBox">
+					<input type="text"
+						placeholder="enter your name" class="box">
+					<input type="text"
+						placeholder="enter your email" class="box">
+				</div>
+				<div class="inputBox">
+					<input type="number"
+						placeholder="enter your number" class="box">
+					<input type="text"
+						placeholder="enter your subject" class="box">
+				</div>
+				<textarea placeholder=" your message" cols="30"
+						rows="10"></textarea>
+				<input type="submit" value="send message" class="btn">
+			</form>
+		</div>
+
+	</section>
+
+	<div class="space"></div>
+
+	<section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#"> <i class="fas 
+				fa-arrow-right"></i> Home</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>Shop</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>About</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i> Review</a>
+				<a href="#"> <i class="fas 
+				fa-arrow-right"></i>Blog</a>
+				<a href="#"> <i class="fas
+				fa-arrow-right"></i>Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#"> <i class="fab 
+				fa-facebook-f"></i> facebook </a>
+				<a href="#"> <i class="fab
+				fa-twitter"></i> twitter </a>
+				<a href="#"> <i class="fab 
+				fa-instagram"></i> instagram </a>
+				<a href="#"> <i class="fab
+				fa-linkedin"></i> linkedin </a>
+				<a href="#"> <i class="fab 
+				fa-pinterest"></i> pinterest </a>
+			</div>
+
+			<div class="box">
+				<h3>newsletter</h3>
+				<p>Dont miss any Offer</p>
+				<form action="">
+					<input type="email" placeholder="your e-mail">
+					<input type="submit" value="subscribe" class="btn">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="credit">Copyrights <span> @NutriBites 2024</span></section>
+
+	<script src="script.js" defer data-deferred="1"></script>
+</body>
+
+</html>
